@@ -1,0 +1,75 @@
+{% load staticfiles %}
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'bootstrap-3.3.5-dist/css/bootstrap.min.css' %}">
+  <script src="jquery.min.js"></script>
+  <script src="{% static 'bootstrap-3.3.5-dist/js/bootstrap.js' %}"></script>
+  
+</head>
+
+<body style="background-color:black">
+<style>
+p.contact{
+    position:fixed;
+    bottom:10px;
+    right:0px;
+    height:20px;
+    width:250px;
+    background-color:'black'; 
+}
+</style>
+  <div class="container" width:100%; height:400px>
+    <img src="{% static 'img/developer-bg.jpg' %}" alt="Why So Serious ? ( Joker )" width="100%"; height="300px">
+  </div>
+  <br><br><br>
+  <section class="grigio">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="media">
+         <div class="row ">
+          <div class="media-img  pull-left  col-sm-5  col-md-4 ">
+           <a href="https://www.facebook.com/Arun"><img src="{% static 'img/Arun.jpg' %}" class="img-circle" alt="Arun" width="150" height="150"></a> </div>
+            <div class="media-body   col-sm-7 col-md-8  "><br>
+              <h4 class="media-heading" style="color:white;font-family:Lucida Calligraphy"><strong> Arun Singhal</strong></h4>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="media">
+          <div class="row ">
+          <div class="media-img pull-left   col-sm-5 col-md-4 ">
+            <a href="https://www.facebook.com/anurag.kushwaha.1441"><img src="{% static 'img/Anurag1.jpg' %}" class="img-circle" alt="Anurag Kumar Kushwaha" width="150" height="150"></a> </div>
+             <div class="media-body   col-sm-7  col-md-8 "><br>
+              <a href="https://www.facebook.com/anurag.kushwaha.1441"><h4 class="media-heading" style="color:white;font-family:Lucida Calligraphy">Anurag Kumar Kushwaha</h4></a>
+              
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="media">
+          <div class="row ">
+            <div class="media-img  pull-left   col-sm-5 col-md-4 ">
+             <a href="https://www.facebook.com/abhishek.singhal.58958"><img src="{% static 'img/Abhishek Singhal.jpg' %}" class="img-circle" alt="Abhishek Singhal" width="150" height="150"> </div>
+             <div class="media-body  col-sm-7 col-md-8 "><br>
+              <a href="https://www.facebook.com/abhishek.singhal.58958"><h4 class="media-heading" style="color:white;font-family:Lucida Calligraphy">Abhishek Singhal</h4></a>
+              
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="contact"><a href='/index/'><strong>Home</strong></a></p>
+
+    
+
+  </div>
+</section>

@@ -1,0 +1,104 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="moonstick no-js laterooms home">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="language" http-equiv="Content-Language" content="en" />
+    <script>
+        window.BOOMR = undefined;
+    </script>
+    <script src="{% static 'js/1.js' %}"></script>
+    <script src="{% static 'js/2.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/2.css' %}">
+
+    <script src="{% static 'js/3.js' %}"></script>
+</head>
+
+<body data-pagetype="home">
+ <section class="above-fold">
+
+            <nav class="main-nav">
+    <ul class="main-nav__desktop">
+            <li><i class="icon-phone"></i><a><font color="red">+918057683190</font></a></li>
+            <li> <a  href="/Developers/" ><b>Developers</b></a></li>
+            <li><a href="/admin/"><b>Admin Login</b></a></li>
+       
+
+
+    </ul>
+</nav>
+
+
+
+
+    <div class="container home-page">
+        <div class="logo-new">
+            <div class="logo-new__subtitle">
+                <p><font size="32"><b>Photo-based music discovery</b></font></p>
+                <p>Paste in a URL to a photo, and get a music playlist tailored to capture that moment.</p>
+            </div>
+        </div>
+        <style>
+            @media (min-width: 768px) {
+                .above-fold {
+                    background-image: url({% static 'img/party.jpg' %});
+                    transition: background-image 0.5s ease-in;
+                }
+
+                .above-fold--loaded {
+                    background-image: url({% static 'img/party.jpg' %});
+                    transition: background-image 0.5s ease-in;
+                }
+            }
+        </style>
+
+    <div id="bg-fullsize" data-src="{% static 'img/party.jpg' %}"></div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+            <form id="search-bar-form" class="searchBarNew stacked "  action="/index/" method="POST"   >
+                {% csrf_token %}
+                <div class="searchbar form-group col-sm-12 col-md-12">
+                     <input name="content" class="form-control destination" type="text" placeholder="Image-Url" data-prefill-with-destination="false" autofocus/>
+                <!--{{ form }}-->
+                </div> 
+                <div class="form-group col-md-offset-4 col-sm-offset-4 col-sm-4 col-md-4 search-button-wrapper">
+                    <button class="btn btn--cta btn--lg btn--block" type="submit">Find Songs</button>
+		</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<ul class="home-text">
+    <li class="icon-checkmark">Over <span>132</span> tags & millions of songs</li>
+    <li class="icon-checkmark">Save your time <span>& money</span></li>
+</ul>
+
+    <section class="footer">
+        <div class="container">
+        <br>
+        <div class="jumbotron">
+            <p id="p01" style="font-family:Matura MT Script Capitals"><font size="32">DjBaleBaabuMeraGaanaBajaDo</font></p>
+            <blockquote>
+            <p>“I believe when life gives you lemons, you should make lemonade...and try to find someone whose life has given them vodka, and have a party.”  </p><p style="text-align:center">
+            <footer style="font-size:17px">   ― Ron White  </footer>
+          </blockquote>
+      </div>
+      <br>
+      <br>
+        <h4>Website Disclaimer</h4>
+        <br>
+        <blockquote>The information contained in this website is for general purposes only. The information is provided by us and while we endeavour to keep the information correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability or availability with respect to the website. Any reliance you place on such information is therefore strictly at your own risk. 
+        Through this website you are able to link to other websites which are not under our control. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</blockquote>
+<br>
+<br>
+<br>
+     <p style="text-align:center;">Copyright © NullVector</p>
+    </div>
+    </section>
+</body>
+
+</html>
+

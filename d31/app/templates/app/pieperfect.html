@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>d3pie examples</title>
+</head>
+<body>
+<h1>
+  Donut representation </h1>
+
+<hr size="1" />
+<div id="pie"></div>
+
+<script src="http://d3pie.org/website/libs/d3.min.js"></script>
+<script src="http://d3pie.org/d3pie/d3pie.js"></script>
+
+<script>
+d3.json("{% url "catchjson1" %}", function(error, data) {
+  
+  var pie = new d3pie("pie", {
+    header: {
+      title: {
+        text: "A Very Simple Pie",
+        fontSize: 30
+      }
+    },
+    data: {
+      content:data
+    }
+    
+  });
+});
+</script>
+</body>
+</html>
